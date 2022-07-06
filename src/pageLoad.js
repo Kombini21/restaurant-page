@@ -15,6 +15,9 @@ headerButton2.setAttribute('id', 'bt2');
 var headerButton3 = document.createElement('button');
 headerButton3.setAttribute('id','bt3');
 
+var restaurantBottom = document.createElement('div');
+restaurantBottom.setAttribute('id', 'bottom');
+
 
 //Create page new elements and export
 
@@ -33,6 +36,8 @@ restaurantd2.setAttribute('id', 'td2');
 
 export var restaurantd3 = document.createElement('div');
 restaurantd3.setAttribute('id', 'td3');
+
+
 
 //Load html container
 
@@ -53,9 +58,11 @@ restaurantHeader.appendChild(headerButton3);
 
 container.appendChild(restaurantHeader);
 container.appendChild(restaurantContainer);
-container.appendChild(restaurantHead);
-container.appendChild(restaurantd1);
-container.appendChild(restaurantd2);
-container.appendChild(restaurantd3);
+restaurantContainer.appendChild(restaurantHead);
+restaurantContainer.appendChild(restaurantd1);
+restaurantContainer.appendChild(restaurantd2);
+restaurantContainer.appendChild(restaurantd3);
+container.appendChild(restaurantBottom);
+
 
 
